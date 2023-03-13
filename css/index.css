@@ -24,7 +24,7 @@ header {
 
 .header-box {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .btn-know-more {
@@ -43,6 +43,10 @@ header {
     box-shadow: 0px 6px 0px 0px #0e462e;
     transform: translateY(-8px);
     transition: all 0.4s;
+}
+
+.btn-fix:hover {
+    transform: none;
 }
 /* END HEADER */
 
@@ -129,6 +133,9 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
+}
+.ytp-title {
+    display: none;
 }
 
 
@@ -260,9 +267,8 @@ section {
     align-items: center;
     margin-top: 45px;
     border-top: 17px solid #0e462e;
-    border-bottom: 8px solid #0e462e;
+    border-bottom: 8px solid #0e462e40;
     border-radius: 27px 27px 314px 7px;
-    /* border-radius: 38px; */
     border-bottom-style: double;
     padding: 29px 10px 10px 10px;
 }
@@ -328,16 +334,16 @@ section {
 .testimonials-title {
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 800;
     color: #0e462e;
     text-transform: uppercase;
-    margin-top: 55px;
+    margin-top: 85px;
 }
 .testimonials-subtitle {
     display: flex;
     justify-content: center;
-    font-size: 18px;
+    font-size: 19px;
     color: #0e462e;
 }
 .testimonials {
@@ -345,7 +351,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 64px;
+    margin-top: 44px;
 }
 .testimonials-box {
     background-color: #ffea3a;
@@ -377,6 +383,113 @@ section {
     margin-right: 16px;
 } 
 /* END CUSTOMER TESTIMONIALS */
+
+
+
+/* Warranty */
+.warranty-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0d7046;
+    padding: 28px 25px 35px 25px;
+    margin-top: 67px;
+}
+.warranty-seal img {
+    user-select: none;
+    max-height: 192px;
+}
+.warranty-description {
+    color: #ffffff;
+    max-width: 623px;
+    margin-left: 48px;
+}
+.warranty-description span {
+    font-size: 18px;
+    color: #d7b262;
+    letter-spacing: 5px;
+}
+.warranty-description h2 {
+    font-size: 33px;
+    font-weight: 800;
+}
+.warranty-description strong {
+    color: #d7b262;
+    font-weight: 800;
+}
+.warranty-description p {
+    font-size: 17px;
+    margin-top: 22px;
+}
+@media (max-width: 1102px) {
+    .warranty-container {
+        flex-direction: column;
+    }   
+    .warranty-seal img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .warranty-description {
+        margin: 0;
+    }
+}
+/* End Warranty */
+
+
+
+/* FAQ */
+.faq-container {
+    max-width: 900px;
+    margin: 56px 0;
+}
+.faq-container h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 800;
+    color: #0e462e;
+    text-transform: uppercase;
+    margin-top: 85px;
+    margin-bottom: 35px;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #cbcbcb;
+}
+  
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #2a2a2a;
+    cursor: pointer;
+    padding: 15px 11px;
+}
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height ease 0.5s;
+    padding: 0 15px;
+}
+.accordion-body p {
+    font-size: 16px;
+    color: #545454;
+    margin: 8px 0 15px 0;
+}
+
+.close img {
+    height: 11px;
+    width: 20px;
+    transition: transform .4s;
+}
+.active .close img:nth-child(odd) {
+    transform: rotateZ(90deg);
+}
+/* FAQ */
 
 
 
@@ -445,6 +558,19 @@ section {
     .product-image img:hover {
         transform: none;
     }
+
+
+    .testimonials-title {
+        font-size: 30px;
+    }
+    .testimonials-subtitle {
+        font-size: 18px;
+    }
+
+
+    .faq-container h1 {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 519px) {
@@ -454,9 +580,19 @@ section {
     .bonus-title {
         font-size: 40px;
     }
+
+
+    .warranty-description span {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 479px) {
+    header {
+        display: none;
+    }
+
+
     .bubble-background {
         position: absolute;
         top: 0;
@@ -464,7 +600,7 @@ section {
         right: 0;
         left: 0;
         height: inherit;
-        max-height: 640px;
+        max-height: 570px;
         border-radius: 0 0 87em 3em;
     }
 
@@ -473,10 +609,12 @@ section {
     }
     .ad-center h2 {
         font-size: 32px;
-        text-align: left;
     }
     .video-title {
         font-size: 14px;
+    }
+    .video-container iframe {
+        border-width: 0 7px 7px 7px;
     }
 
 
@@ -490,7 +628,7 @@ section {
 
 
     .bonus-subtitle {
-        font-size: 15px;
+        font-size: 16px;
         padding: 0 6px;
     }
     .bonus-title {
@@ -500,7 +638,24 @@ section {
 
     .product-info {
         border-top: 11px solid #0e462e;
-        border-radius: 27px 27px 10px 10px;
+        /* border-radius: 27px 27px 10px 10px; */
+    }
+
+
+    .warranty-description span {
+        letter-spacing: 3px;
+    }
+    .warranty-description h2 {
+        font-size: 30px;
+    }
+    .warranty-description p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 402px) {
+    .bonus-subtitle {
+        font-size: 15px;
     }
 }
 /* end mobile responsive */

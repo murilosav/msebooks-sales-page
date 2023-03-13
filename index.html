@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales Page</title>
+    <title>Recipe eBook - Sales Page</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 <body>
 
@@ -18,29 +19,28 @@
         <header>
             <div class="header-container">
                 <div class="header-box">
-                    <a href="#" class="btn-know-more">SAIBA MAIS</a>
-                    <a href="#" class="btn-know-more">COMPRAR</a>
+                    <a href="#" class="btn-know-more btn-fix">COMPRAR</a>
                 </div>
             </div>
         </header>
 
         <div class="ad-center">
             <h2>VEJA O QUE <span>PAIVA</span> FEZ PARA PERDER PESO E REDEFINIR SEU CORPO!</h2>
-            <span class="video-title">Não sofra mais!...Queime gordura durante todo o dia de forma natural.</span>
+            <span class="video-title">Não sofra mais!... Queime gordura durante todo o dia de forma natural.</span>
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/1pCCuCBNHCM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="stamps">
                 <div class="seal">
-                    <img src="https://assets.website-files.com/5f280227ac3de02e0eb1d698/5f28156c8e65f23572d24221_cadeado-privacidade.svg" draggable="false">
+                    <img src="./svg/privacy-icon.svg" draggable="false">
                     <span>Privacidade protegida</span>
                 </div>
                 <div class="seal">
-                    <img src="https://assets.website-files.com/5f280227ac3de02e0eb1d698/5f28156dd73b8b50dfed1829_shield-site-seguro.svg" draggable="false">
+                    <img src="./svg/secure-icon.svg" draggable="false">
                     <span>Site 100% seguro</span>
                 </div>
                 <div class="seal">
-                    <img src="https://assets.website-files.com/5f280227ac3de02e0eb1d698/5f28156da3b2992e7aebcae4_trofeu-garantia.svg" draggable="false">
+                    <img src="./svg/trophy.svg" draggable="false">
                     <span>Garantia de satisfação</span>
                 </div>
             </div>
@@ -172,20 +172,61 @@
                         <strong>Nathan Navarro</strong>
                     </div>
                 </div>
-                <div class="testimonials-box">
-                    <span>
-                        "SellFlux além de uma máquina de conversão de novas vendas me ajudou a recuperar em torno de 37% das vendas sobre carrinhos 
-                        abandonados 12% no pagamento de boletos/pix gerados. Tudo isso de pessoas que já tinham desistido da compra, o melhor do mercado!"
-                    </span>
-                    <div class="customer">
-                        <img src="https://lancador.s3.sa-east-1.amazonaws.com/project_24/4MEsURSV9VaGB8vi14k2WrMXG4NV6o2n.jpg" alt="Foto">
-                        <strong>Nathan Navarro</strong>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
     <!-- Customer Testimonials -->
 
+    <!-- Warranty -->
+    <div class="warranty-container">
+        <div class="warranty-seal">
+            <img src="./images/garantia-7dias.png" alt="Selo de Garantia" draggable="false">
+        </div>
+        <div class="warranty-description">
+            <span>GARANTIA TOTAL DE SATISFAÇÃO</span>
+            <h2>Experimente por <strong>7 Dias</strong></h2>
+            <p>Não se preocupe, se o conteúdo descrito aqui não for o mesmo que você receber, você tem <b>7 dias de garantia</b> e nós devolveremos seu dinheiro sem burocracia!</p>
+        </div>
+    </div>
+    <!-- Warranty -->
+
+    <!-- FAQ -->
+    <section>
+        <div class="section-unique">
+            <div class="faq-container">
+                <h1>Dúvidas frequentes</h1>
+                <div class="accordion">
+                    <div class="accordion-header">
+                        COMO A SELLFLUX VAI SOLUCIONAR OS PROBLEMAS DA MINHA EMPRESA?
+                        <div class="close">
+                            <img src="./svg/arrow-icon.svg">
+                        </div>
+                    </div>
+                    <div class="accordion-body">
+                    <p>
+                        A SellFlux te ajuda a otimizar suas conversões de vendas por meio de ações personalizadas via Ligação, WhatsApp ou SMS. 
+                        Com esta ferramenta você pode automatizar as suas vendas em um só lugar, personalizando cada ação, e por consequência trazendo um grande retorno para a sua empresa.
+                    </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">
+                        COMO POSSO ALTERAR DADOS CADASTRADOS?
+                        <div class="close">
+                            <img src="./svg/arrow-icon.svg">
+                        </div>
+                    </div>
+                    <div class="accordion-body">
+                    <p>
+                        Para alterar os dados cadastrais, entre em contato com o suporte da SellFlux através do ícone do WhatsApp que está localizado no lado direito da tela, no canto inferior.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ -->
+
+    <script src="./js/faq.js"></script>
 </body>
 </html>
