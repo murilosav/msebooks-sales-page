@@ -192,28 +192,77 @@ header {
 }
 .bonus {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 20px 0 59px 0;
-    user-select: none;
+    margin: 9px 0 38px 0;
 }
+.bonus-box {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 7px;
+    max-width: 237px;
+    padding: 12px 23px 23px 23px;
+    margin: 17px;
+}
+
 .bonus-image {
     display: flex;
+    justify-content: center;
+    user-select: none;
 }
 .bonus-image img {
-    max-width: 230px;
+    max-width: 169px;
     width: 100%;
     transition: all 1s;
 }
 .bonus-image img:hover {
     transform: scale(1.2);
-    filter: drop-shadow(7px 27px 8px #0000009c);
+    filter: drop-shadow(3px 11px 8px #00000038);
     transition: all 1s;
+}
+
+.bonus-info {
+    height: 132px;
+}
+.bonus-info h3 {
+    color: #0e462e;
+    font-weight: 800;
+    margin: 13px 0 5px 0;
+}
+.bonus-info p {
+    color: #0e462e;
+}
+
+.b-old-price {
+    display: flex;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: 700;
+    color: #ff0000;
+    margin-top: 12px;
+}
+.b-old-price p {
+    text-decoration-line: line-through;
+    margin-left: 6px;
+}
+.b-price {
+    /* position: absolute;
+    right: 0%;
+    left: 0%; */
+    margin: auto;
+    max-width: 175px;
+    font-size: 23px;
+    font-weight: 900;
+    color: #0e462e;
+    /* background-color: #ffe530; */
+    border-radius: 25px;
+    /* padding: 8px; */
 }
 /* END BONUS */
 
 
 
-/* SECTION INFO */
+/* PRODUCT DETAILS */
 section {
     display: flex;
     flex-direction: column;
@@ -222,7 +271,7 @@ section {
     padding: 0 15px;
 }
 .section-unique {
-    max-width: 1000px;
+    max-width: 1080px;
 }
 
 
@@ -237,12 +286,24 @@ section {
     font-weight: 700;
     color: #0e462e;
 }
+.info-title {
+    position: relative;
+}
+.brush {
+    position: absolute;
+    display: flex;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    height: 59px;
+}
 .info-title h1 {
     color: #0e462e;
-    font-size: 85px;
+    font-size: 46px;
     font-weight: 800;
     line-height: 1.3em;
     text-transform: uppercase;
+    margin-bottom: 22px;
 }
 .info-description {
     display: flex;
@@ -251,12 +312,19 @@ section {
 }
 .info-description span {
     font-size: 18px;
+    color: #1a1a1a;
     max-width: 815px;
     margin-bottom: 20px;
 }
 .info-description span b {
     color: #0e462e;
     font-weight: 800;
+}
+.emphasis {
+    font-size: 20px;
+}
+#text-highlight {
+    color: #f3a800;
 }
 
 
@@ -284,6 +352,7 @@ section {
 .product-image img {
     max-width: 400px;
     width: 100%;
+    margin-left: 14px;
     transition: all 1s;
 }
 .product-image img:hover {
@@ -298,6 +367,7 @@ section {
 }
 .product-details span {
     font-size: 17px;
+    color: #1a1a1a;
     margin-bottom: 20px;
 }
 .product-details span b {
@@ -325,8 +395,81 @@ section {
         transform: scale(1.1);
     }
 }
-/* END SECTION INFO */
+/* END PRODUCT DETAILS */
 
+
+
+/* HIGHLIGHT */
+.highlight {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-align: -webkit-center;
+    background-color: #857042;
+    color: #ffffff;
+    padding: 75px 25px;
+    margin-top: 80px;
+}
+.highlight-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9px;
+}
+.highlight-title span {
+    font-size: 30px;
+    font-weight: 800;
+}
+.highlight-title-marker {
+    color: #ffcc51;
+}
+.highlight-subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.highlight-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.highlight-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 246px;
+    margin: 12px;
+}
+.highlight-image {
+    display: flex;
+    margin-bottom: 10px;
+    user-select: none;
+}
+.highlight-image img {
+    max-height: 230px;
+    width: 100%;
+    transition: all .9s;
+}
+.highlight-image img:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+.highlight-description {
+    margin-bottom: 36px;
+}
+.highlight-description h2 {
+    color: #ffe172;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    height: 57px;
+    margin-top: 14px;
+    margin-bottom: 11px;
+}
+.highlight-description span {
+    font-size: 16px;
+    font-weight: 500;
+}
+/* END HIGHLIGHT */
 
 
 
@@ -363,7 +506,7 @@ section {
 }
 .box-green {
     background-color: #0d7046;
-    color: white;
+    color: #ffffff;
 }
 .box-yellow {
     background-color: #ffea3a;
@@ -493,6 +636,29 @@ section {
 
 
 
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #0e462e;
+    padding: 31px 25px;
+    margin-top: 60px;
+}
+
+.footer-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #c1c1c1;
+    font-size: 13px;
+    max-width: 1000px;
+}
+.footer-description p {
+    margin-bottom: 7px;
+}
+/* End Footer */
+
+
 /* mobile responsive */
 @media (max-width: 991px) {
     .ad-center h2 {
@@ -502,9 +668,6 @@ section {
 
     .info-subdescription span {
         font-size: 24px;
-    }
-    .info-title h1 {
-        font-size: 60px;
     }
     .info-description span {
         font-size: 17px;
@@ -533,7 +696,7 @@ section {
         font-size: 23px;
     }
     .info-title h1 {
-        font-size: 48px;
+        font-size: 39px;
     }
     .info-description span {
         font-size: 16px;
@@ -541,7 +704,7 @@ section {
 
 
     .bonus-subtitle {
-        font-size: 20px;
+        font-size: 22px;
     }
     .bonus-title {
         font-size: 46px;
@@ -554,9 +717,11 @@ section {
     .product-image img {
         max-width: 287px;
         margin-bottom: 12px;
+        margin-left: 0;
     }
     .product-image img:hover {
         transform: none;
+        filter: none;
     }
 
 
@@ -574,14 +739,6 @@ section {
 }
 
 @media (max-width: 519px) {
-    .bonus-subtitle {
-        font-size: 17px;
-    }
-    .bonus-title {
-        font-size: 40px;
-    }
-
-
     .warranty-description span {
         font-size: 16px;
     }
@@ -628,11 +785,11 @@ section {
 
 
     .bonus-subtitle {
-        font-size: 16px;
+        font-size: 21px;
         padding: 0 6px;
     }
     .bonus-title {
-        font-size: 32px;
+        font-size: 38px;
     }
 
 
@@ -655,7 +812,11 @@ section {
 
 @media (max-width: 402px) {
     .bonus-subtitle {
-        font-size: 15px;
+        font-size: 17px;
+        padding: 0 6px;
+    }
+    .bonus-title {
+        font-size: 30px;
     }
 }
 /* end mobile responsive */
