@@ -114,7 +114,6 @@ header {
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 30px;
     height: 0;
     overflow: hidden;
     user-select: none;
@@ -143,7 +142,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 100px 0 0 0;
+    margin: 130px 0 0 0;
 }
 
 .seal {
@@ -194,13 +193,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 9px 0 38px 0;
+    margin: 9px 0 18px 0;
 }
 .bonus-box {
     position: relative;
     background-color: #ffffff;
     border-radius: 7px;
-    max-width: 237px;
+    max-width: 330px;
     padding: 12px 23px 23px 23px;
     margin: 17px;
 }
@@ -222,7 +221,7 @@ header {
 }
 
 .bonus-info {
-    height: 132px;
+    height: 104px;
 }
 .bonus-info h3 {
     color: #0e462e;
@@ -251,12 +250,69 @@ header {
     left: 0%; */
     margin: auto;
     max-width: 175px;
-    font-size: 23px;
+    font-size: 25px;
     font-weight: 900;
     color: #0e462e;
     /* background-color: #ffe530; */
     border-radius: 25px;
     /* padding: 8px; */
+}
+
+.offer-title {
+    color: #0e462e;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0 9px;
+}
+.offer-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 14px 7px 47px 7px;
+}
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 65px;
+    border-radius: 22px;
+    padding: 14px;
+}
+.timer:not(:last-child) {
+    margin-right: 7px;
+}
+.timer p {
+    font-size: 36px;
+    font-weight: 900;
+    color: #0e462e;
+    line-height: 38px;
+}
+.timer span {
+    font-size: 15px;
+    color: #0e462e;
+}
+
+.btn-i-want-freebies {
+    text-decoration: none;
+    font-size: 22px;
+    color: #0e462e;
+    font-weight: 800;
+    border-radius: 29px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #ffe530;
+    box-shadow: 0px 6px 0px 0px #0e462e;
+    transform: translateY(-8px);
+    padding: 12px 26px;
+    margin: 0 7px;
+    transition: all 0.2s;
+}
+.btn-i-want-freebies:hover {
+    box-shadow: 0 0 0 0;
+    transform: translateY(0);
+    transition: all 0.2s;
 }
 /* END BONUS */
 
@@ -279,7 +335,7 @@ section {
     max-width: 940px;
     text-align: center;
     text-align: -webkit-center;
-    margin-top: 86px;
+    margin-top: 59px;
 }
 .info-subdescription span {
     font-size: 28px;
@@ -375,16 +431,23 @@ section {
 }
 .btn-purchase-right-now {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 17px;
     color: #0e462e;
     font-weight: 800;
     border-radius: 29px;
     cursor: pointer;
     user-select: none;
-    background-image: linear-gradient(to bottom right, #ffd45a, #ffeb00);
-    padding: 12px 26px;
+    background: #ffeb00;
+    text-align: center;
+    text-align: -webkit-center;
+    padding: 17px 57px;
     margin-bottom: 22px;
-    animation: btn 1s infinite alternate;
+    animation: btn .5s infinite alternate;
+    transition: all .5s;
+}
+.btn-purchase-right-now:hover {
+    transition: all .4s;
+    background: #ffcb37;
 }
 @keyframes btn {
     from {
@@ -392,7 +455,7 @@ section {
     }
 
     to {
-        transform: scale(1.1);
+        transform: scale(1.08);
     }
 }
 /* END PRODUCT DETAILS */
@@ -461,7 +524,6 @@ section {
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
-    height: 57px;
     margin-top: 14px;
     margin-bottom: 11px;
 }
@@ -522,9 +584,17 @@ section {
     width: 68px;
     height: 68px;
     object-fit: cover;
+    user-select: none;
     border-radius: 50%;
     margin-right: 16px;
-} 
+}
+.customer-info {
+    display: flex;
+    flex-direction: column;
+}
+.customer-info span {
+    font-size: 15px;
+}
 /* END CUSTOMER TESTIMONIALS */
 
 
@@ -635,6 +705,43 @@ section {
 /* FAQ */
 
 
+/* Offer */
+.offer {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.offer h2 {
+    color: #0e462e;
+    margin-bottom: 25px;
+    text-align: center;
+    text-align: -webkit-center;
+}
+.offer-image {
+    display: flex;
+}
+.offer-image img {
+    width: 100%;
+    max-width: 880px;
+}
+.offer-price {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-align: -webkit-center;
+    margin-top: 27px;
+}
+.offer-price span {
+    font-size: 28px;
+}
+.offer-price span b {
+    font-weight: 900;
+    color: #0e462e;
+}
+.off {
+    text-decoration-line: line-through;
+}
+/* Offer */
+
 
 /* Footer */
 footer {
@@ -648,13 +755,9 @@ footer {
 .footer-description {
     display: flex;
     flex-direction: column;
-    align-items: center;
     color: #c1c1c1;
-    font-size: 13px;
+    font-size: 11px;
     max-width: 1000px;
-}
-.footer-description p {
-    margin-bottom: 7px;
 }
 /* End Footer */
 
@@ -709,6 +812,9 @@ footer {
     .bonus-title {
         font-size: 46px;
     }
+    .btn-i-want-freebies {
+        font-size: 22px;
+    }
 
 
     .product-primary {
@@ -736,11 +842,20 @@ footer {
     .faq-container h1 {
         font-size: 28px;
     }
+
+
+    .offer-price span {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 519px) {
     .warranty-description span {
         font-size: 16px;
+    }
+
+    .btn-purchase-right-now {
+        font-size: 18px;
     }
 }
 
@@ -791,6 +906,18 @@ footer {
     .bonus-title {
         font-size: 38px;
     }
+    .offer-title {
+        font-size: 20px;
+    }
+    .timer:not(:last-child) {
+        margin-right: 4px;
+    }
+    .timer p {
+        font-size: 30px;
+    }
+    .timer span {
+        font-size: 14px;
+    }
 
 
     .product-info {
@@ -808,6 +935,14 @@ footer {
     .warranty-description p {
         font-size: 16px;
     }
+
+    .offer-price span {
+        font-size: 20px;
+    }
+    .offer-purchase {
+        font-size: 16px;
+        padding: 14px 24px;
+    }
 }
 
 @media (max-width: 402px) {
@@ -817,6 +952,13 @@ footer {
     }
     .bonus-title {
         font-size: 30px;
+    }
+
+    .offer-title {
+        font-size: 18px;
+    }
+    .timer p {
+        font-size: 28px;
     }
 }
 /* end mobile responsive */
