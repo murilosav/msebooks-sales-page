@@ -174,8 +174,8 @@ header {
     background: #f1f1f1;
     text-align: center;
     text-align: -webkit-center;
-    padding: 38px 0;
-    margin: 43px 0;
+    padding: 38px 0 66px 0;
+    margin-top: 48px;
 }
 .bonus-subtitle {
     font-size: 32px;
@@ -193,7 +193,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 9px 0 18px 0;
+    margin: 9px 0 50px 0;
 }
 .bonus-box {
     position: relative;
@@ -245,19 +245,26 @@ header {
     margin-left: 6px;
 }
 .b-price {
-    /* position: absolute;
-    right: 0%;
-    left: 0%; */
+    position: absolute;
+    right: 0;
+    left: 0;
     margin: auto;
     max-width: 175px;
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 900;
     color: #0e462e;
-    /* background-color: #ffe530; */
+    background-color: #ffe530;
     border-radius: 25px;
-    /* padding: 8px; */
+    padding: 8px;
 }
 
+
+.limited-offer {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    padding: 28px 0;
+}
 .offer-title {
     color: #0e462e;
     font-size: 22px;
@@ -268,7 +275,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 14px 7px 47px 7px;
+    margin: 14px 7px 14px 7px;
 }
 .timer {
     display: flex;
@@ -296,23 +303,20 @@ header {
 
 .btn-i-want-freebies {
     text-decoration: none;
-    font-size: 22px;
-    color: #0e462e;
+    font-size: 18px;
+    color: #ffffff;
     font-weight: 800;
     border-radius: 29px;
     cursor: pointer;
     user-select: none;
-    background-color: #ffe530;
-    box-shadow: 0px 6px 0px 0px #0e462e;
-    transform: translateY(-8px);
+    background: linear-gradient(63deg, #0e462e, #ffc800);
     padding: 12px 26px;
     margin: 0 7px;
-    transition: all 0.2s;
+    transition: all 0.5s;
 }
 .btn-i-want-freebies:hover {
-    box-shadow: 0 0 0 0;
-    transform: translateY(0);
-    transition: all 0.2s;
+    transform: scale(1.07);
+    transition: all 0.5s;
 }
 /* END BONUS */
 
@@ -377,7 +381,10 @@ section {
     font-weight: 800;
 }
 .emphasis {
+    display: block;
     font-size: 20px;
+    text-align: center;
+    text-align: -webkit-center;
 }
 #text-highlight {
     color: #f3a800;
@@ -471,7 +478,6 @@ section {
     background-color: #857042;
     color: #ffffff;
     padding: 75px 25px;
-    margin-top: 80px;
 }
 .highlight-title {
     display: flex;
@@ -722,6 +728,12 @@ section {
 .offer-image img {
     width: 100%;
     max-width: 880px;
+    user-select: none;
+    transition: transform 0.6s;
+}
+.offer-image img:hover {
+    transform: scale(1.05);
+    transition: transform 0.6s;
 }
 .offer-price {
     display: flex;
@@ -812,9 +824,6 @@ footer {
     .bonus-title {
         font-size: 46px;
     }
-    .btn-i-want-freebies {
-        font-size: 22px;
-    }
 
 
     .product-primary {
@@ -822,7 +831,7 @@ footer {
     }
     .product-image img {
         max-width: 287px;
-        margin-bottom: 12px;
+        margin-bottom: 24px;
         margin-left: 0;
     }
     .product-image img:hover {
@@ -959,6 +968,12 @@ footer {
     }
     .timer p {
         font-size: 28px;
+    }
+}
+
+@media (max-width: 344px) {
+    .faq-container h1 {
+        font-size: 25px;
     }
 }
 /* end mobile responsive */
