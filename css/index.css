@@ -77,8 +77,8 @@ header {
 }
 /* END BACKGROUND'S */
 
-/* AD CENTER */
-.ad-center {
+/* VIDEO CENTER */
+.video-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,14 +91,14 @@ header {
     padding: 40px 75px;
 }
 
-.ad-center h2 {
+.video-center h2 {
     font-size: 42px;
     font-weight: 900;
     line-height: 1.3em;
     color: #ffffff;
     margin-bottom: 17px;
 }
-.ad-center h2 span {
+.video-center h2 span {
     color: #ffe530;
 }
 
