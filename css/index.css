@@ -776,7 +776,7 @@ footer {
 
 /* mobile responsive */
 @media (max-width: 991px) {
-    .ad-center h2 {
+    .video-center h2 {
         font-size: 38px;
     }
 
@@ -798,11 +798,11 @@ footer {
 }
 
 @media (max-width: 767px) {
-    .ad-center {
+    .video-center {
         padding: 40px 30px;
     }
 
-    .ad-center h2 {
+    .video-center h2 {
         font-size: 28px;
     }
 
@@ -885,10 +885,10 @@ footer {
         border-radius: 0 0 87em 3em;
     }
 
-    .ad-center {
+    .video-center {
         padding: 40px 15px;
     }
-    .ad-center h2 {
+    .video-center h2 {
         font-size: 32px;
     }
     .video-title {
