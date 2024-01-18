@@ -16,7 +16,7 @@ Garantimos que nossa página é totalmente otimizada para proporcionar o menor t
 ![CloudFlare](https://i.imgur.com/1sLv7mY.png)
 
 
-## Caso esteja interessado nesta ou em outra página exclusiva para sua empresa, contate:
+## Caso esteja interessado nesta ou em uma página exclusiva para sua empresa, contate:
 
 - Instagram: [@murilo.sav](https://www.instagram.com/murilo.sav)
 - Telegram: [@murilosav](https://t.me/murilosav)
