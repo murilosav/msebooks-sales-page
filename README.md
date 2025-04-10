@@ -18,7 +18,7 @@ Garantimos que nossa página é totalmente otimizada para proporcionar o menor t
 
 ## Caso esteja interessado nesta ou em uma página exclusiva para sua empresa, contate:
 
-- Instagram: [@murilo.sav](https://www.instagram.com/murilo.sav)
-- Telegram: [@murilosav](https://t.me/murilosav)
-- WhatsApp: [@murilosav](https://api.whatsapp.com/send/?phone=5542998685557)
-- X / Twitter: [@savitarx](https://x.com/savitarx)
+- Instagram: [@murilos4v](https://www.instagram.com/murilos4v)
+- Telegram: [@murilos4v](https://t.me/murilos4v)
+- WhatsApp: [@murilos4v](https://api.whatsapp.com/send/?phone=5542998685557)
+- X / Twitter: [@murilos4v](https://x.com/murilos4v)
