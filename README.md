@@ -1,24 +1,37 @@
-# Página de vendas **[MS E-BOOKS]**
-Este é um template **front-end** de uma **página de vendas** disponível para uso conforme a [licença](./LICENSE).
+# 💰 Página de Alta Conversão para Infoprodutos | Template MS E-BOOKS
 
-- 100% Otimizado para Mínimo Tempo de Carregamento e Total Responsividade.
-Garantimos que nossa página é totalmente otimizada para proporcionar o menor tempo de carregamento possível, assegurando uma experiência rápida e eficiente para os visitantes. Além disso, a página é completamente responsiva, adaptando-se perfeitamente a diferentes dispositivos e tamanhos de tela. Priorizamos a acessibilidade e a satisfação do usuário, proporcionando uma navegação suave e agradável em qualquer plataforma.
+Template front-end profissional para **landing pages de produtos digitais**, ideal para a venda de **E-books**, infoprodutos, cursos e mais.
 
-**[Visualizar o projeto](https://murilosav.github.io/msebooks-sales-page/)**
+🔗 **[Visualizar o projeto](https://murilosav.github.io/msebooks-sales-page/)**
 
-## Licença
+## 🚀 Destaques
 
-[Apache License 2.0](./LICENSE)
+- ⚡ **Desempenho Máximo:** Otimizado para carregamento ultrarrápido, garantindo uma experiência fluida e eficiente.
+- 📱 **Totalmente Responsivo:** Layout adaptável a qualquer dispositivo (mobile, tablet, desktop).
+- 🎯 **Foco em Conversão:** Estrutura pensada para guiar o visitante até a ação de compra.
+- 🎨 **Design Limpo e Moderno:** Estética profissional e personalizável conforme sua marca.
+- 🔒 **Código Aberto:** Disponível sob [Licença Apache 2.0](./LICENSE), pronto para uso pessoal ou comercial.
 
+---
 
-## Desempenho - Speed Test CloudFlare
+## 📊 Performance – Teste de Velocidade (Cloudflare)
 
-![CloudFlare](https://i.imgur.com/1sLv7mY.png)
+![Cloudflare Speed Test](https://i.imgur.com/1sLv7mY.png)
 
+---
 
-## Caso esteja interessado nesta ou em uma página exclusiva para sua empresa, contate:
+## 📬 Contato
 
-- Instagram: [@murilos4v](https://www.instagram.com/murilos4v)
-- Telegram: [@murilos4v](https://t.me/murilos4v)
-- WhatsApp: [@murilos4v](https://api.whatsapp.com/send/?phone=5542998685557)
-- X / Twitter: [@murilos4v](https://x.com/murilos4v)
+Se deseja utilizar este template ou criar uma **landing page exclusiva para o seu negócio**, fale comigo:
+
+- 💬 Instagram: [@murilos4v](https://www.instagram.com/murilos4v)  
+- ✉️ Telegram: [@murilos4v](https://t.me/murilos4v)  
+- 📞 WhatsApp: [Clique para conversar](https://api.whatsapp.com/send/?phone=5542998685557)  
+- 🐦 Twitter / X: [@murilos4v](https://x.com/murilos4v)
+
+---
+
+## 📘 Licença
+
+Distribuído sob a [Apache License 2.0](./LICENSE).  
+Você pode usar, modificar e adaptar este template conforme necessário.
